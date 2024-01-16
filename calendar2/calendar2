@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+
+case "$BLOCK_BUTTON" in
+    1) swaymsg -q exec gsimplecal
+esac
+
+date "+%a %d.%m.%Y %H:%M:%S"
+date "+%H:%M:%S"
