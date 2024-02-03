@@ -7,6 +7,7 @@
 
 case $BLOCK_BUTTON in
     1) swaymsg -q exec "wvkbd-mobintl -L 256 --bg 050c11 --fg 0e0c13 --fg-sp 260c14 --press 41101f --press-sp 41101f --text c0c7cb --text-sp 5bf1f9 -l 'simple,cyrillic,special' --landscape-layers 'simple,cyrillic,special'" ;;
+    3) swaymsg -q exec "killall -9 wvkbd-mobintl" ;;
     4) swaymsg -q input "*" xkb_switch_layout prev ;;
     5) swaymsg -q input "*" xkb_switch_layout next ;;
 esac
